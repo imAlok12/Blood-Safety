@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Blood Safety</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo-section">
+      <i class="fas fa-heartbeat"></i>
+      <h1>Blood Safety</h1>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="donation.html">Donation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#support" class="live-support-btn"><i class="fas fa-headset"></i> Live Support</a></li>
+      </ul>
+    </nav>
+    <div class="auth-icons">
+      <a href="signup.html" class="icon-link" title="Sign Up">
+        <i class="fas fa-user-plus"></i>
+        <span>Register</span>
+      </a>
+      <a href="login.html" class="icon-link" title="Login">
+        <i class="fas fa-sign-in-alt"></i>
+        <span>Sign In</span>
+      </a>
+    </div>
+  </div>
+  <p>Swift Emergency Response at Your Fingertips</p>
+</header>
+
+<section class="contact-hero">
+  <div class="contact-inner">
+    <h2>Emergency Contacts</h2>
+    <p>If you're in immediate danger, call the appropriate emergency number below.</p>
+
+    <div class="emergency-grid">
+      <a href="tel:112" class="emergency-item"><span class="num">112</span><span class="label">National Emergency</span></a>
+      <a href="tel:100" class="emergency-item"><span class="num">100</span><span class="label">Police</span></a>
+      <a href="tel:101" class="emergency-item"><span class="num">101</span><span class="label">Fire</span></a>
+      <a href="tel:102" class="emergency-item"><span class="num">102</span><span class="label">Ambulance</span></a>
+      <a href="tel:108" class="emergency-item"><span class="num">108</span><span class="label">Disaster Management Services</span></a>
+      <a href="tel:1091" class="emergency-item"><span class="num">1091</span><span class="label">Women Helpline</span></a>
+      <a href="tel:1906" class="emergency-item full"><span class="num">1906</span><span class="label">Cyber Crime</span></a>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-form-section">
+  <div class="contact-form-card">
+    <h3>Send Us A Message</h3>
+    <p>Have a question or need non-urgent help? Send us a message and we'll respond shortly.</p>
+
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="cname">Name</label>
+        <input type="text" id="cname" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="cemail">Email</label>
+        <input type="email" id="cemail" name="email" placeholder="you@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" name="message" placeholder="Write your message here..." rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn-contact">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>About Blood Safety</h3>
+      <p>Emergency Assistance System providing swift blood donation and medical emergency response services.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#donation">Donation</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Email: support@bloodsafety.com</p>
+      <p>Phone: +1 (800) 123-4567</p>
+      <p>24/7 Emergency Support Available</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Blood Safety. All rights reserved.</p>
+    <p>Developed by <strong>Alok</strong> | Professional Emergency Assistance Platform</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you, we received your message. We will reply to ' + document.getElementById('cemail').value + '.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
